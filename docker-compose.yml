@@ -12,10 +12,13 @@ services:
     image: postgres:13.0-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+#    environment:
+#      - POSTGRES_USER=amit
+#      - POSTGRES_PASSWORD=pass123
+#      - POSTGRES_DB=placement_management
     environment:
       - POSTGRES_USER=amit
       - POSTGRES_PASSWORD=pass123
       - POSTGRES_DB=placement_management
-
 volumes:
   postgres_data:
